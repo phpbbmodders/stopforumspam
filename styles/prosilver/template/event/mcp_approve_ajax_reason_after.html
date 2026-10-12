@@ -1,0 +1,3 @@
+{% if S_SFS_REPORT_DISAPPROVED and not S_APPROVE and not S_RESTORE %}
+	<label><input type="checkbox" name="sfs_report_disapproved" value="1"> {{ lang('SFS_REPORT_DISAPPROVED') }}</label>
+{% endif %}
