@@ -36,4 +36,6 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, [
 	'LOG_SFS_REPORTED' => '<strong>User was reported to Stop Forum Spam</strong><br>» %1$s',
+	'LOG_SFS_REPORT_FAILED' => '<strong>Reporting a disapproved post’s poster to Stop Forum Spam failed</strong><br>» %1$s',
+	'SFS_REPORT_DISAPPROVED' => 'Report the poster to Stop Forum Spam',
 ]);

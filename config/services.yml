@@ -28,6 +28,11 @@ services:
         tags:
             - { name: event.listener }
 
+    phpbbmodders.stopforumspam.disapprovelistener:
+        class: phpbbmodders\stopforumspam\event\disapprove_listener
+        tags:
+            - { name: event.listener }
+
     phpbbmodders.stopforumspam.core.reporttosfs:
         class: phpbbmodders\stopforumspam\core\reporttosfs
 

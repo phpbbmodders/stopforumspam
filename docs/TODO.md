@@ -2,50 +2,19 @@
 
 Ideas not yet built, practical and speculative alike.
 
-## Disapprove and report in one step
+## Announce disapprove-and-report on phpBB.com
 
-Requested on phpBB.com:
+Disapproving a post from the moderation queue can now report its poster to
+Stop Forum Spam in the same step, as requested in
 https://www.phpbb.com/customise/db/extension/phpbb_3.1_stop_forum_spam/support/topic/250564
-and, for rejecting several queued posts at once:
-https://www.phpbb.com/customise/db/extension/phpbb_3.1_stop_forum_spam/support/topic/222786
+and
+https://www.phpbb.com/customise/db/extension/phpbb_3.1_stop_forum_spam/support/topic/222786.
+It needs phpBB 3.3.20 or later, which adds the template events it uses
+([PHPBB-17737](https://tracker.phpbb.com/browse/PHPBB-17737),
+[phpbb/phpbb#7077](https://github.com/phpbb/phpbb/pull/7077)).
 
-Add a "Report to Stop Forum Spam" checkbox to the screen moderators see when
-they disapprove a post from the moderation queue, so a spam post can be
-disapproved and its poster reported in one step. Today the report button
-only appears on posts shown in a topic or private message.
-
-Planned behavior:
-
-- The checkbox shows only when disapproving (not approving), only to staff
-  allowed to report, and only when the extension is enabled with an API key.
-- On submit, `core.disapprove_posts_after` reports each disapproved post's
-  poster the same way the existing report button does, skipping posters
-  already reported, guests, and administrators or moderators.
-- Unchecked by default.
-
-Blocked on phpBB: `mcp_approve.html`, the template for that screen, has no
-template events in phpBB 3.3 or `master`, so an extension can't add the
-checkbox. The PHP side already works: the confirm form, including its AJAX
-pop-up, posts every field back. The event request is written up in
-[`docs/events/mcp_approve_reason_after.txt`](events/mcp_approve_reason_after.txt)
-and was filed with phpBB as
-[PHPBB-17737](https://tracker.phpbb.com/browse/PHPBB-17737) on 10/07/2026.
-
-Still needs deciding:
-
-- Whether to also offer a way to warn the user, as the requester asked.
-  phpBB's warnings are a separate MCP tool, so this may be better left to
-  that tool.
-- Whether to add a "Report to Stop Forum Spam" link on the MCP post details
-  page (`mcp_post_report_buttons_top_after` already exists there) as a way
-  to report unapproved posts before the template event lands.
-
-Reporting users who never posted, asked for in the same topic, is already
-possible with phpbbmodders/sfscompanion (*Scan users*, and the *Check SFS*
-link on profiles) and phpbbmodders/ban-hammer (report from the profile).
-
-Reply to post in the phpBB.com topic (250564) **only once phpBB has added
-the template event** and this feature is built. Fill in the version first:
+Once a release includes it, post this reply in topic 250564 (fill in the
+version first):
 
 ```
 Thanks for the suggestions, and sorry for the slow reply.
@@ -59,6 +28,9 @@ Disapprove and report in one step: Stop Forum Spam VERSION adds a "Report to Sto
 
 William Jacoby (bonelifer)
 ```
+
+Not planned unless someone asks again: also warning the user from the same
+screen. phpBB's warnings are a separate MCP tool.
 
 ## Choice of Stop Forum Spam server
 

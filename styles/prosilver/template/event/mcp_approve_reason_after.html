@@ -1,0 +1,6 @@
+{% if S_SFS_REPORT_DISAPPROVED and not S_APPROVE and not S_RESTORE %}
+	<dl class="fields2 nobg">
+		<dt>&nbsp;</dt>
+		<dd><label><input type="checkbox" name="sfs_report_disapproved" id="sfs_report_disapproved" value="1"> {{ lang('SFS_REPORT_DISAPPROVED') }}</label></dd>
+	</dl>
+{% endif %}
