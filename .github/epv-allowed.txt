@@ -1,0 +1,12 @@
+# EPV findings this extension keeps on purpose, checked by the epv job in
+# .github/workflows/tests.yml. One finding per line as EPV prints it, without
+# "on line N", with paths relative to the extension; give the reason above it.
+
+# ext.php reads phpBB's own serialized migration dependency lists when it moves
+# an install made under the old vendor name, with allowed_classes off, so no
+# objects can be created.
+Error: Using unserialize in /ext.php
+
+# Released migration: reads the extension's own sfs_settings config_text from its
+# previous version. Released migrations must not be changed.
+Error: Using unserialize in /migrations/version_103.php
