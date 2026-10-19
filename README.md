@@ -10,6 +10,7 @@ Checks registrations and guest posts against the Stop Forum Spam database and le
 - Detected spammers can be shown an error, or sent to a fake success page so they think it worked. Optionally bans them and logs the block in the ACP.
 - Choose whether registration and posting go through when Stop Forum Spam can't be reached.
 - With a Stop Forum Spam API key, administrators and moderators get a button to report a post's author, and users can optionally report private messages they received. Reports can raise a board notification.
+- On phpBB 3.3.20 or later, moderators can also report a post's author while disapproving the post from the moderation queue.
 - Works with [Contact Admin](https://github.com/phpbbmodders/contactadmin): its contact form is checked too.
 - Settings under **ACP → Extensions → Stop Forum Spam**.
 
