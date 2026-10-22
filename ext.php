@@ -67,7 +67,7 @@ class ext extends \phpbb\extension\base
 	}
 
 	/**
-	 * Require phpBB 3.3.19
+	 * Require phpBB 3.3.19 due to several security fixes in the phpBB software.
 	 *
 	 * @return bool
 	 */
@@ -77,13 +77,13 @@ class ext extends \phpbb\extension\base
 	}
 
 	/**
-	 * Require PHP 7.4
+	 * Requires PHP 8.3.36 due to security fixes.
 	 *
 	 * @return bool
 	 */
 	public function check_php_version()
 	{
-		return PHP_VERSION_ID >= 70400;
+		return PHP_VERSION_ID >= 80336;
 	}
 
 	/**
