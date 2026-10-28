@@ -1,5 +1,7 @@
-# Normalize line endings to LF in the repository
+# Shared line endings and binary files
 * text=auto eol=lf
+
+# Normalize line endings to LF in the repository
 
 # Never convert line endings in binary files
 *.png binary
@@ -8,10 +10,6 @@
 *.gif binary
 *.webp binary
 *.ico binary
-
-# .gitignore is LF, but its macOS "Icon" rule needs a literal carriage
-# return in the pattern; store the file exactly as written
-.gitignore -text
 
 tests/			export-ignore
 docs/images/	export-ignore
