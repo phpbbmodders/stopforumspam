@@ -73,3 +73,12 @@ The SFS API takes a `notorexit` flag that leaves Tor exit nodes out of the
 IP check. Add a Yes/No setting for it, off by default so behavior doesn't
 change for existing boards.
 
+## Requests from the extension audit
+
+### Profile reporting with evidence safeguards
+
+Evaluate a direct profile action and companion-extension coverage. Require a justified report with evidence. [Source](https://www.phpbb.com/customise/db/extension/phpbb_3.1_stop_forum_spam/support/topic/253156)
+
+### Export blocked IPs for server-side review
+
+Evaluate an explicit export with controlled access and retention. Define which matches qualify for inclusion. [Source](https://www.phpbb.com/customise/db/extension/phpbb_3.1_stop_forum_spam/support/topic/252664)
