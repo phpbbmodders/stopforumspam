@@ -1,8 +1,27 @@
-# This file is for standardising the coding style between different editors
-# http://editorconfig.org/
+# EditorConfig
+# https://editorconfig.org/
+#
+# Consistent formatting for project files.
 
 root = true
 
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+[*.{php,js,css,json,html,htm,txt,md,yml,yaml,xml,twig}]
+charset = utf-8
+indent_style = tab
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.{txt,md,yml,yaml}]
+trim_trailing_whitespace = false
+
+[*.{yml,yaml}]
+indent_style = space
+
+# Existing project-specific settings
 [*]
 end_of_line = lf
 indent_size = 4
@@ -15,4 +34,8 @@ trim_trailing_whitespace = false
 
 [*.yml]
 indent_size = 4
+indent_style = space
+
+# YAML requires spaces rather than tabs.
+[*.{yml,yaml}]
 indent_style = space

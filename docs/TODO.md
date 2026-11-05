@@ -2,6 +2,19 @@
 
 Ideas not yet built, practical and speculative alike.
 
+## Historical feature requests and improvement review
+
+Review candidates transferred from `worthlookingat.md`: checks on posts from
+newly registered users, evidence-based ACP reporting, API diagnostics,
+conditional ban duration, diagnostic logging, reporting safeguards, clearer
+blocked-user messages, and matching thresholds. Verify current implementation
+and original discussions before treating any candidate as a missing feature.
+Regional endpoint requests supplement the existing server-choice task below.
+Additional historical maintenance checks remain verification tasks.
+
+See the [detailed historical review](TODO/todo-historical-feature-review.md)
+for original issue/PR links, proposed scope, and implementation prerequisites.
+
 ## Announce disapprove-and-report on phpBB.com
 
 Disapproving a post from the moderation queue can now report its poster to
