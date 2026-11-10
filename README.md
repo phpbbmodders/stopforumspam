@@ -28,7 +28,7 @@ Click a screenshot for the full size. They are also on the [Screenshots wiki pag
 ## Requirements
 
 - phpBB 3.3.19 or later
-- PHP 7.4 or later, with the cURL extension built with SSL support
+- PHP 8.1 or later, with the cURL extension built with SSL support
 
 ## Installation
 
