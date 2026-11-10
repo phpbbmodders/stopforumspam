@@ -77,13 +77,13 @@ class ext extends \phpbb\extension\base
 	}
 
 	/**
-	 * Requires PHP 8.3.36 due to security fixes.
+	 * Requires PHP 8.1.0 or later.
 	 *
 	 * @return bool
 	 */
 	public function check_php_version()
 	{
-		return PHP_VERSION_ID >= 80336;
+		return PHP_VERSION_ID >= 80100;
 	}
 
 	/**
